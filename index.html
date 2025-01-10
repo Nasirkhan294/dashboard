@@ -36,7 +36,7 @@
           margin-left: 250px;
         }
       }
-    
+
       .header {
         background-color: #ffffff;
         border-bottom: 1px solid #dee2e6;
@@ -61,7 +61,11 @@
             aria-label="Toggle navigation"
             id="closeSidebar"
           >
-            <img src="assets/bars.png" alt="menu bars" style="width: 20px; height: auto;"/>
+            <img
+              src="assets/bars.png"
+              alt="menu bars"
+              style="width: 20px; height: auto"
+            />
           </button>
         </div>
         <div
@@ -84,7 +88,7 @@
         <ul class="nav flex-column py-3">
           <div class="d-flex justify-content-between align-items-center py-3">
             <h6 class="text-muted ms-3">Dashboards</h6>
-            <img src="assets/expand_less.png" alt="icon" class="me-3 mb-2">
+            <img src="assets/expand_less.png" alt="icon" class="me-3 mb-2" />
           </div>
           <li class="nav-item">
             <a
@@ -248,10 +252,16 @@
       <!-- Header -->
       <div class="header row justify-content-between align-items-center py-3">
         <button class="btn ms-3 col-2 d-md-none" id="toggleSidebar">
-          <img src="assets/bars.png" alt="menu bars" style="width: 25px; height: auto;"/>
+          <img
+            src="assets/bars.png"
+            alt="menu bars"
+            style="width: 25px; height: auto"
+          />
         </button>
 
-        <div class="col-4 d-flex align-items-center d-none d-lg-flex justify-content-around">
+        <div
+          class="col-4 d-flex align-items-center d-none d-lg-flex justify-content-around"
+        >
           <form class="input-group w-75 border rounded-3">
             <span class="input-group-text bg-white border-0"
               ><img src="assets/search.png" alt="icon"
@@ -270,40 +280,191 @@
             <img src="assets/mic.png" alt="mic" />
           </figure>
         </div>
-        <ul class="col-6 d-flex justify-content-end align-items-center d-none d-lg-flex mb-0">
-          <li class="nav-item me-3" style="list-style-type: none; font-size: 14px;">
+        <ul
+          class="col-6 d-flex justify-content-end align-items-center d-none d-lg-flex mb-0"
+        >
+          <li
+            class="nav-item me-3"
+            style="list-style-type: none; font-size: 14px"
+          >
             <a href="#" class="nav-link">Dashboard</a>
           </li>
-          <li class="nav-item me-3" style="list-style-type: none; font-size: 14px;">
-            <a href="#" class="nav-link">My Tasks</a>
+          <li
+            class="nav-item me-3"
+            style="list-style-type: none; font-size: 14px"
+          >
+            <a href="#" class="nav-link text-muted">My Tasks</a>
           </li>
-          <li class="nav-item me-3" style="list-style-type: none; font-size: 14px;">
-            <a href="#" class="nav-link">My Tasks</a>
+          <li
+            class="nav-item me-3"
+            style="list-style-type: none; font-size: 14px"
+          >
+            <a href="#" class="nav-link text-muted">My Tasks</a>
           </li>
-          <li class="nav-item me-3" style="list-style-type: none; font-size: 14px;">
-            <a href="#" class="nav-link">Reporting</a>
+          <li
+            class="nav-item me-3"
+            style="list-style-type: none; font-size: 14px"
+          >
+            <a href="#" class="nav-link text-muted">Reporting</a>
           </li>
-          <li class="nav-item me-3" style="list-style-type: none; font-size: 14px;">
-            <a href="#" class="nav-link">Portfolio</a>
+          <li
+            class="nav-item me-3"
+            style="list-style-type: none; font-size: 14px"
+          >
+            <a href="#" class="nav-link text-muted">Portfolio</a>
           </li>
-          <li class="nav-item me-3" style="list-style-type: none; font-size: 14px;">
-            <a href="#" class="nav-link">Goals</a>
+          <li
+            class="nav-item me-3"
+            style="list-style-type: none; font-size: 14px"
+          >
+            <a href="#" class="nav-link text-muted">Goals</a>
           </li>
         </ul>
 
         <div
           class="col-6 col-lg-2 d-flex align-items-center justify-content-end"
         >
-          <img src="assets/bell.png" alt="icon" class="me-3"/>
-          <img src="assets/message.png" alt="icon"  class="me-3"/>
+          <img src="assets/bell.png" alt="icon" class="me-3" />
+          <img src="assets/message.png" alt="icon" class="me-3" />
           <img src="assets/profile.png" alt="profile" class="me-3" />
         </div>
       </div>
 
-      <!-- Placeholder for dynamic content -->
-      <div class="mt-4 px-3">
-        <h1 class="h2">Task Boards</h1>
-        <p>The dashboard content will come here...</p>
+      <!-- Main content start -->
+      <div class="container px-3">
+        <div class="row mt-4 px-3">
+          <div class="col-3 d-flex align-items-center justify-content-start">
+            <h1 class="fs-3 me-4">Task Boards</h1>
+            <figure>
+              <img src="assets/pencil.png" alt="icon" />
+            </figure>
+          </div>
+          <ul class="col-6 d-flex justify-content-end align-items-center mb-0">
+            <li
+              class="nav-item me-3"
+              style="list-style-type: none; font-size: 14px"
+            >
+              <a
+                href="#"
+                class="nav-link text-primary border-bottom border-primary pb-2"
+                >Timeline</a
+              >
+            </li>
+            <li
+              class="nav-item me-3"
+              style="list-style-type: none; font-size: 14px"
+            >
+              <a href="#" class="nav-link pb-2">Calendar</a>
+            </li>
+            <li
+              class="nav-item me-3"
+              style="list-style-type: none; font-size: 14px"
+            >
+              <a href="#" class="nav-link pb-2">Dashboard</a>
+            </li>
+            <li
+              class="nav-item me-3"
+              style="list-style-type: none; font-size: 14px"
+            >
+              <a href="#" class="nav-link pb-2">Progress</a>
+            </li>
+            <li
+              class="nav-item me-3"
+              style="list-style-type: none; font-size: 14px"
+            >
+              <a href="#" class="nav-link pb-2">Forms</a>
+            </li>
+            <li
+              class="nav-item me-3"
+              style="list-style-type: none; font-size: 14px"
+            >
+              <a href="#" class="nav-link pb-2">More</a>
+            </li>
+          </ul>
+
+          <div
+            class="col-6 col-lg-3 d-flex align-items-center justify-content-end"
+          >
+            <img src="assets/avatar1.png" alt="icon" />
+            <img
+              src="assets/avatar2.png"
+              alt="icon"
+              style="margin-left: -1rem"
+            />
+            <img
+              src="assets/avatar3.png"
+              alt="profile"
+              style="margin-left: -1rem"
+            />
+            <img
+              src="assets/avatar4.png"
+              alt="profile"
+              style="margin-left: -1rem"
+            />
+            <img
+              src="assets/Other.png"
+              alt="profile"
+              style="margin-left: -1rem"
+            />
+            <img src="assets/Icon.png" alt="icon" class="ms-2" />
+          </div>
+        </div>
+        <div class="row mt-4 px-3">
+          <div class="col d-flex p-0 border rounded-3">
+            <div
+              class="d-flex align-items-center justify-content-start px-2 bg-light border-end"
+            >
+              <img src="assets/d-icon.png" alt="icon" class="me-2" />
+              <span style="font-size: 12px">Board View</span>
+            </div>
+            <div class="d-flex align-items-center justify-content-center px-3">
+              <img src="assets/barrs.png" alt="icon" class="me-2" />
+              <span style="font-size: 12px">List View</span>
+            </div>
+          </div>
+          <div
+            class="col-4 d-flex align-items-center justify-content-center rounded-3"
+            >
+            <span><img src="assets/Line.png" alt="icon"></span>
+            <div class="d-flex align-items-center justify-content-center p-2">
+              <img src="assets/lock1.png" alt="icon" class="me-3" />
+              <span style="font-size: 12px" class="text-muted"
+              >Limited Access</span
+              >
+              <img src="assets/arrow.png" alt="icon" class="ms-3" />
+            </div>
+            <div class="d-flex align-items-center justify-content-center p-2">
+              <span><img src="assets/Line.png" alt="icon"></span>
+              <span style="font-size: 12px" class="text-muted ms-2">Owners</span>
+              <img src="assets/twitter.png" alt="icon" class="mx-2" />
+              <span style="font-size: 12px" class="text-muted"
+                >Twitter Team</span
+              >
+            </div>
+          </div>
+          <div class="col d-flex align-items-center justify-content-center">
+            <form class="input-group w-75 border rounded-3">
+              <span class="input-group-text bg-white border-0"
+                ><img src="assets/search.png" alt="icon"
+              /></span>
+              <input
+                type="text"
+                class="form-control border-0"
+                placeholder="Search Tasks"
+                aria-label="Search Tasks"
+              />
+            </form>
+          </div>
+          <div
+            class="col d-flex align-items-center justify-content-between"
+          >
+            <img src="assets/Icon Button.png" alt="icon" />
+            <img src="assets/Icon Button-1.png" alt="icon" />
+            <img src="assets/Icon Button-2.png" alt="profile" />
+            <img src="assets/Icon Button-3.png" alt="profile" />
+            <img src="assets/Icon Button-4.png" alt="profile" />
+          </div>
+        </div>
       </div>
     </div>
 
@@ -318,7 +479,7 @@
 
       closeSidebar.addEventListener('click', () => {
         sidebar.classList.remove('open');
-      })
+      });
     </script>
 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
