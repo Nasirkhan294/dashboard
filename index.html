@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <!-- Fontawesome icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <style>
+      .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        overflow-y: scroll;
+        background-color: #f8f9fa;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 1040;
+      }
+      .sidebar.open {
+        transform: translateX(0);
+      }
+
+      @media (min-width: 1024px) {
+        .sidebar {
+          transform: translateX(0);
+          width: 250px;
+        }
+        .main-content {
+          margin-left: 250px;
+        }
+      }
+    
+      .header {
+        background-color: #ffffff;
+        border-bottom: 1px solid #dee2e6;
+        position: sticky;
+        top: 0;
+        z-index: 1030;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar border-end bg-white" id="sidebar">
+      <div class="position-sticky">
+        <div
+          class="d-flex align-items-center justify-content-between border-bottom"
+          style="padding: 26.5px 20px"
+        >
+          <h6 class="mb-0" style="font-size: 1.2rem">Dashboard</h6>
+          <button
+            type="button"
+            class="navbar-toggler"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            id="closeSidebar"
+          >
+            <img src="assets/bars.png" alt="menu bars" style="width: 20px; height: auto;"/>
+          </button>
+        </div>
+        <div
+          class="d-flex align-items-center justify-content-between py-3 border-bottom mx-3"
+        >
+          <div class="d-flex align-items-center w-75 justify-content-between">
+            <img src="assets/Avatar.png" alt="Avatar" />
+
+            <div>
+              <p class="mb-0 fw-medium" style="font-size: 14px">
+                Nancy Martino
+              </p>
+              <span class="text-muted" style="font-size: 12px">Designer</span>
+            </div>
+          </div>
+          <div>
+            <img src="assets/Vector.png" alt="Vector" />
+          </div>
+        </div>
+        <ul class="nav flex-column py-3">
+          <div class="d-flex justify-content-between align-items-center py-3">
+            <h6 class="text-muted ms-3">Dashboards</h6>
+            <img src="assets/expand_less.png" alt="icon" class="me-3 mb-2">
+          </div>
+          <li class="nav-item">
+            <a
+              href="#"
+              class="nav-link d-inline-flex justify-content-between w-100"
+            >
+              <div>
+                <img src="assets/inbox.png" alt="icon" />
+                <span class="ms-3 text-dark">Inbox</span>
+              </div>
+              <div>
+                <span class="badge bg-light text-primary">4</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="#"
+              class="nav-link d-inline-flex justify-content-between w-100"
+            >
+              <div>
+                <img src="assets/drive.png" alt="icon" />
+                <span class="ms-3 text-dark">Drive Files</span>
+              </div>
+              <div>
+                <span class="badge bg-light text-primary">435</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="#"
+              class="nav-link d-inline-flex justify-content-between w-100"
+            >
+              <div>
+                <img src="assets/boards.png" alt="icon" />
+                <span class="ms-3 text-dark">Boards</span>
+              </div>
+              <div>
+                <span class="badge bg-light text-primary">5</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="#"
+              class="nav-link d-inline-flex justify-content-between w-100"
+            >
+              <div>
+                <img src="assets/updates.png" alt="icon" />
+                <span class="ms-3 text-dark">Updates</span>
+              </div>
+              <div>
+                <span class="badge bg-light text-primary"></span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="#"
+              class="nav-link d-inline-flex justify-content-between w-100"
+            >
+              <div>
+                <img src="assets/analytics.png" alt="icon" />
+                <span class="ms-3 text-dark">Analytics</span>
+              </div>
+              <div>
+                <span class="badge bg-light text-primary">2</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="#"
+              class="nav-link d-inline-flex justify-content-between w-100"
+            >
+              <div>
+                <img src="assets/dashboard.png" alt="icon" />
+                <span class="ms-3 text-dark">CRM Dashboard</span>
+              </div>
+              <div>
+                <span class="badge bg-light text-primary">2</span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="#"
+              class="nav-link d-inline-flex justify-content-between w-100"
+            >
+              <div>
+                <img src="assets/ecommerce.png" alt="icon" />
+                <span class="ms-3 text-dark">Ecommerce</span>
+              </div>
+              <div>
+                <span class="badge bg-light text-primary"></span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="#"
+              class="nav-link d-inline-flex justify-content-between w-100"
+            >
+              <div>
+                <img src="assets/payment.png" alt="icon" />
+                <span class="ms-3 text-dark">Cryptocurrency</span>
+              </div>
+              <div>
+                <span class="badge bg-light text-primary"></span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="#"
+              class="nav-link d-inline-flex justify-content-between w-100"
+            >
+              <div>
+                <img src="assets/lock.png" alt="icon" />
+                <span class="ms-3 text-dark">Projects</span>
+              </div>
+              <div>
+                <span class="badge bg-light text-primary"></span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="#"
+              class="nav-link d-inline-flex justify-content-between w-100"
+            >
+              <div>
+                <img src="assets/image_search.png" alt="icon" />
+                <span class="ms-3 text-dark">NFT Marketplace</span>
+              </div>
+              <div>
+                <span class="badge bg-light text-primary"></span>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="#"
+              class="nav-link d-inline-flex justify-content-between w-100"
+            >
+              <div>
+                <img src="assets/settings.png" alt="icon" />
+                <span class="ms-3 text-dark">Settings</span>
+              </div>
+              <div>
+                <span class="badge bg-light text-primary">2</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main-content" id="mainContent">
+      <!-- Header -->
+      <div class="header row justify-content-between align-items-center py-3">
+        <button class="btn ms-3 col-2 d-md-none" id="toggleSidebar">
+          <img src="assets/bars.png" alt="menu bars" style="width: 25px; height: auto;"/>
+        </button>
+
+        <div class="col-4 d-flex align-items-center d-none d-lg-flex justify-content-around">
+          <form class="input-group w-75 border rounded-3">
+            <span class="input-group-text bg-white border-0"
+              ><img src="assets/search.png" alt="icon"
+            /></span>
+            <input
+              type="text"
+              class="form-control border-0"
+              placeholder="Search Tasks"
+              aria-label="Search Tasks"
+            />
+            <span class="input-group-text bg-white border-0"
+              ><img src="assets/forward.png" alt="icon"
+            /></span>
+          </form>
+          <figure class="mb-0">
+            <img src="assets/mic.png" alt="mic" />
+          </figure>
+        </div>
+        <ul class="col-6 d-flex justify-content-end align-items-center d-none d-lg-flex mb-0">
+          <li class="nav-item me-3" style="list-style-type: none; font-size: 14px;">
+            <a href="#" class="nav-link">Dashboard</a>
+          </li>
+          <li class="nav-item me-3" style="list-style-type: none; font-size: 14px;">
+            <a href="#" class="nav-link">My Tasks</a>
+          </li>
+          <li class="nav-item me-3" style="list-style-type: none; font-size: 14px;">
+            <a href="#" class="nav-link">My Tasks</a>
+          </li>
+          <li class="nav-item me-3" style="list-style-type: none; font-size: 14px;">
+            <a href="#" class="nav-link">Reporting</a>
+          </li>
+          <li class="nav-item me-3" style="list-style-type: none; font-size: 14px;">
+            <a href="#" class="nav-link">Portfolio</a>
+          </li>
+          <li class="nav-item me-3" style="list-style-type: none; font-size: 14px;">
+            <a href="#" class="nav-link">Goals</a>
+          </li>
+        </ul>
+
+        <div
+          class="col-6 col-lg-2 d-flex align-items-center justify-content-end"
+        >
+          <img src="assets/bell.png" alt="icon" class="me-3"/>
+          <img src="assets/message.png" alt="icon"  class="me-3"/>
+          <img src="assets/profile.png" alt="profile" class="me-3" />
+        </div>
+      </div>
+
+      <!-- Placeholder for dynamic content -->
+      <div class="mt-4 px-3">
+        <h1 class="h2">Task Boards</h1>
+        <p>The dashboard content will come here...</p>
+      </div>
+    </div>
+
+    <script>
+      const sidebar = document.getElementById('sidebar');
+      const toggleSidebar = document.getElementById('toggleSidebar');
+      const closeSidebar = document.getElementById('closeSidebar');
+
+      toggleSidebar.addEventListener('click', () => {
+        sidebar.classList.toggle('open');
+      });
+
+      closeSidebar.addEventListener('click', () => {
+        sidebar.classList.remove('open');
+      })
+    </script>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  </body>
+</html>
