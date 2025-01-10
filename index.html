@@ -9,8 +9,20 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
     />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/bootstrap.css" />
     <style>
+      body {
+        font-family: "Inter", serif;
+        font-weight: 700;
+        background-color: #f7f8fa;
+      }
       .sidebar {
         position: fixed;
         top: 0;
@@ -18,7 +30,7 @@
         height: 100vh;
         width: 100vw;
         overflow-y: scroll;
-        background-color: #f8f9fa;
+        background-color: #f7f8fa;
         transform: translateX(-100%);
         transition: transform 0.3s ease-in-out;
         z-index: 1040;
@@ -34,11 +46,12 @@
         }
         .main-content {
           margin-left: 250px;
+          height: 100vh;
+          overflow-y: auto;
         }
       }
 
       .header {
-        background-color: #ffffff;
         border-bottom: 1px solid #dee2e6;
         position: sticky;
         top: 0;
@@ -47,7 +60,7 @@
     </style>
   </head>
   <body>
-    <div class="sidebar border-end bg-white" id="sidebar">
+    <div class="sidebar border-end" id="sidebar">
       <div class="position-sticky">
         <div
           class="d-flex align-items-center justify-content-between border-bottom"
@@ -97,7 +110,7 @@
             >
               <div>
                 <img src="assets/inbox.png" alt="icon" />
-                <span class="ms-3 text-dark">Inbox</span>
+                <span class="ms-3 text-dark" style="font-size: 12px;">Inbox</span>
               </div>
               <div>
                 <span class="badge bg-light text-primary">4</span>
@@ -111,7 +124,7 @@
             >
               <div>
                 <img src="assets/drive.png" alt="icon" />
-                <span class="ms-3 text-dark">Drive Files</span>
+                <span class="ms-3 text-dark" style="font-size: 12px;">Drive Files</span>
               </div>
               <div>
                 <span class="badge bg-light text-primary">435</span>
@@ -125,7 +138,7 @@
             >
               <div>
                 <img src="assets/boards.png" alt="icon" />
-                <span class="ms-3 text-dark">Boards</span>
+                <span class="ms-3 text-dark" style="font-size: 12px;">Boards</span>
               </div>
               <div>
                 <span class="badge bg-light text-primary">5</span>
@@ -139,7 +152,7 @@
             >
               <div>
                 <img src="assets/updates.png" alt="icon" />
-                <span class="ms-3 text-dark">Updates</span>
+                <span class="ms-3 text-dark" style="font-size: 12px;">Updates</span>
               </div>
               <div>
                 <span class="badge bg-light text-primary"></span>
@@ -153,7 +166,7 @@
             >
               <div>
                 <img src="assets/analytics.png" alt="icon" />
-                <span class="ms-3 text-dark">Analytics</span>
+                <span class="ms-3 text-dark" style="font-size: 12px;">Analytics</span>
               </div>
               <div>
                 <span class="badge bg-light text-primary">2</span>
@@ -167,7 +180,7 @@
             >
               <div>
                 <img src="assets/dashboard.png" alt="icon" />
-                <span class="ms-3 text-dark">CRM Dashboard</span>
+                <span class="ms-3 text-dark" style="font-size: 12px;">CRM Dashboard</span>
               </div>
               <div>
                 <span class="badge bg-light text-primary">2</span>
@@ -181,7 +194,7 @@
             >
               <div>
                 <img src="assets/ecommerce.png" alt="icon" />
-                <span class="ms-3 text-dark">Ecommerce</span>
+                <span class="ms-3 text-dark" style="font-size: 12px;">Ecommerce</span>
               </div>
               <div>
                 <span class="badge bg-light text-primary"></span>
@@ -195,7 +208,7 @@
             >
               <div>
                 <img src="assets/payment.png" alt="icon" />
-                <span class="ms-3 text-dark">Cryptocurrency</span>
+                <span class="ms-3 text-dark" style="font-size: 12px;">Cryptocurrency</span>
               </div>
               <div>
                 <span class="badge bg-light text-primary"></span>
@@ -209,7 +222,7 @@
             >
               <div>
                 <img src="assets/lock.png" alt="icon" />
-                <span class="ms-3 text-dark">Projects</span>
+                <span class="ms-3 text-dark" style="font-size: 12px;">Projects</span>
               </div>
               <div>
                 <span class="badge bg-light text-primary"></span>
@@ -223,7 +236,7 @@
             >
               <div>
                 <img src="assets/image_search.png" alt="icon" />
-                <span class="ms-3 text-dark">NFT Marketplace</span>
+                <span class="ms-3 text-dark" style="font-size: 12px;">NFT Marketplace</span>
               </div>
               <div>
                 <span class="badge bg-light text-primary"></span>
@@ -237,7 +250,7 @@
             >
               <div>
                 <img src="assets/settings.png" alt="icon" />
-                <span class="ms-3 text-dark">Settings</span>
+                <span class="ms-3 text-dark" style="font-size: 12px;">Settings</span>
               </div>
               <div>
                 <span class="badge bg-light text-primary">2</span>
@@ -262,7 +275,7 @@
         <div
           class="col-4 d-flex align-items-center d-none d-lg-flex justify-content-around"
         >
-          <form class="input-group w-75 border rounded-3">
+          <form class="input-group w-75 border rounded-3" >
             <span class="input-group-text bg-white border-0"
               ><img src="assets/search.png" alt="icon"
             /></span>
@@ -271,8 +284,9 @@
               class="form-control border-0"
               placeholder="Search Tasks"
               aria-label="Search Tasks"
+              style="font-size: 12px;"
             />
-            <span class="input-group-text bg-white border-0"
+            <span class="input-group-text bg-white border-0" 
               ><img src="assets/forward.png" alt="icon"
             /></span>
           </form>
@@ -285,37 +299,37 @@
         >
           <li
             class="nav-item me-3"
-            style="list-style-type: none; font-size: 14px"
+            style="list-style-type: none; font-size: 11px"
           >
             <a href="#" class="nav-link">Dashboard</a>
           </li>
           <li
             class="nav-item me-3"
-            style="list-style-type: none; font-size: 14px"
+            style="list-style-type: none; font-size: 11px"
           >
             <a href="#" class="nav-link text-muted">My Tasks</a>
           </li>
           <li
             class="nav-item me-3"
-            style="list-style-type: none; font-size: 14px"
+            style="list-style-type: none; font-size: 11px"
           >
             <a href="#" class="nav-link text-muted">My Tasks</a>
           </li>
           <li
             class="nav-item me-3"
-            style="list-style-type: none; font-size: 14px"
+            style="list-style-type: none; font-size: 11px"
           >
             <a href="#" class="nav-link text-muted">Reporting</a>
           </li>
           <li
             class="nav-item me-3"
-            style="list-style-type: none; font-size: 14px"
+            style="list-style-type: none; font-size: 11px"
           >
             <a href="#" class="nav-link text-muted">Portfolio</a>
           </li>
           <li
             class="nav-item me-3"
-            style="list-style-type: none; font-size: 14px"
+            style="list-style-type: none; font-size: 11px"
           >
             <a href="#" class="nav-link text-muted">Goals</a>
           </li>
@@ -332,7 +346,7 @@
 
       <!-- Main content start -->
       <div class="container px-3">
-        <div class="row mt-4 px-3">
+        <div class="row mt-5 px-3">
           <div class="col-3 d-flex align-items-center justify-content-start">
             <h1 class="fs-3 me-4">Task Boards</h1>
             <figure>
@@ -342,7 +356,7 @@
           <ul class="col-6 d-flex justify-content-end align-items-center mb-0">
             <li
               class="nav-item me-3"
-              style="list-style-type: none; font-size: 14px"
+              style="list-style-type: none; font-size: 11px"
             >
               <a
                 href="#"
@@ -352,31 +366,31 @@
             </li>
             <li
               class="nav-item me-3"
-              style="list-style-type: none; font-size: 14px"
+              style="list-style-type: none; font-size: 11px"
             >
               <a href="#" class="nav-link pb-2">Calendar</a>
             </li>
             <li
               class="nav-item me-3"
-              style="list-style-type: none; font-size: 14px"
+              style="list-style-type: none; font-size: 11px"
             >
               <a href="#" class="nav-link pb-2">Dashboard</a>
             </li>
             <li
               class="nav-item me-3"
-              style="list-style-type: none; font-size: 14px"
+              style="list-style-type: none; font-size: 11px"
             >
               <a href="#" class="nav-link pb-2">Progress</a>
             </li>
             <li
               class="nav-item me-3"
-              style="list-style-type: none; font-size: 14px"
+              style="list-style-type: none; font-size: 11px"
             >
               <a href="#" class="nav-link pb-2">Forms</a>
             </li>
             <li
               class="nav-item me-3"
-              style="list-style-type: none; font-size: 14px"
+              style="list-style-type: none; font-size: 11px"
             >
               <a href="#" class="nav-link pb-2">More</a>
             </li>
@@ -416,13 +430,13 @@
                 class="d-flex align-items-center justify-content-start p-2 bg-light border-end"
               >
                 <img src="assets/d-icon.png" alt="icon" class="me-2" />
-                <span style="font-size: 12px">Board View</span>
+                <span style="font-size: 11px">Board View</span>
               </div>
               <div
                 class="d-flex align-items-center justify-content-center py-2 p-3"
               >
                 <img src="assets/barrs.png" alt="icon" class="me-2" />
-                <span style="font-size: 12px">List View</span>
+                <span style="font-size: 11px">List View</span>
               </div>
             </div>
           </div>
@@ -432,18 +446,18 @@
             <span><img src="assets/Line.png" alt="icon" /></span>
             <div class="d-flex align-items-center justify-content-center p-2">
               <img src="assets/lock1.png" alt="icon" class="me-3" />
-              <span style="font-size: 12px" class="text-muted"
+              <span style="font-size: 11px" class="text-muted"
                 >Limited Access</span
               >
               <img src="assets/arrow.png" alt="icon" class="ms-3" />
             </div>
             <div class="d-flex align-items-center justify-content-center p-2">
               <span><img src="assets/Line.png" alt="icon" /></span>
-              <span style="font-size: 12px" class="text-muted ms-2"
+              <span style="font-size: 11px" class="text-muted ms-2"
                 >Owners</span
               >
               <img src="assets/twitter.png" alt="icon" class="mx-2" />
-              <span style="font-size: 12px" class="text-muted"
+              <span style="font-size: 11px" class="text-muted"
                 >Twitter Team</span
               >
             </div>
@@ -458,6 +472,7 @@
                 class="form-control border-0"
                 placeholder="Search Tasks"
                 aria-label="Search Tasks"
+                style="font-size: 12px;"
               />
             </form>
           </div>
@@ -467,6 +482,88 @@
             <img src="assets/Icon Button-2.png" alt="profile" />
             <img src="assets/Icon Button-3.png" alt="profile" />
             <img src="assets/Icon Button-4.png" alt="profile" />
+          </div>
+        </div>
+
+        <div class="row mt-5 px-3 gap-2">
+          <div class="col">
+            <div class="d-flex align-items-center justify-content-between">
+              <h3 class="fs-6">
+                Backlog Tasks <span class="badge bg-light text-warning">5</span>
+              </h3>
+              <img src="assets/dots.png" alt="icon" class="me-3 mb-2" />
+            </div>
+            <div class="bg-white me-3 rounded-3 py-3">
+              <div
+                class="d-flex align-items-center justify-content-between px-2"
+              >
+                <h4 class="fs-6 ms-2">Model Answer</h4>
+                <figure>
+                  <img src="assets/file-1.png" alt="icon" /><span
+                    class="badge text-primary"
+                    >4</span
+                  >
+                </figure>
+              </div>
+              <div class="d-flex px-3">
+                <span
+                  class="badge border text-secondary rounded-pill me-1 py-1 px-2"
+                  style="font-size: 10px"
+                  >#UI007</span
+                >
+                <span
+                  class="badge border text-primary rounded-pill me-1 py-1 px-2"
+                  style="font-size: 10px"
+                  >Design</span
+                >
+                <span
+                  class="badge border text-warning rounded-pill py-1 px-2"
+                  style="font-size: 10px"
+                  >Backlog</span
+                >
+              </div>
+              <div class="d-flex px-3 mt-3">
+                <div class="d-flex">
+                  <img src="assets/avatar3.png" alt="icon" />
+                  <img
+                    src="assets/avatar4.png"
+                    alt="icon"
+                    style="margin-left: -1rem"
+                  />
+                  <img
+                    src="assets/Other.png"
+                    alt="profile"
+                    style="margin-left: -1rem"
+                  />
+                  <img src="assets/Icon.png" alt="icon" class="ms-2" />
+                </div>
+                <div class="d-flex"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="d-flex align-items-center justify-content-between">
+              <h3 class="fs-6">
+                To Do Tasks <span class="badge bg-light text-danger">3</span>
+              </h3>
+              <img src="assets/dots.png" alt="icon" class="me-3 mb-2" />
+            </div>
+          </div>
+          <div class="col">
+            <div class="d-flex align-items-center justify-content-between">
+              <h3 class="fs-6">
+                In Process <span class="badge bg-light text-info">2</span>
+              </h3>
+              <img src="assets/dots.png" alt="icon" class="me-3 mb-2" />
+            </div>
+          </div>
+          <div class="col">
+            <div class="d-flex align-items-center justify-content-between">
+              <h3 class="fs-6">
+                Done <span class="badge bg-light text-success">5</span>
+              </h3>
+              <img src="assets/dots.png" alt="icon" class="me-3 mb-2" />
+            </div>
           </div>
         </div>
       </div>
