@@ -9,6 +9,11 @@ body {
   background-color: #e5ecf8;
 }
 
+.badge-secondary {
+  color: #98a2b2;
+  border: 1px solid #98a2b2;
+}
+
 .badge-warning {
   color: #ca8a04;
   background-color: #f6ecda;
@@ -36,6 +41,10 @@ body {
 
 .text-warning {
   color: #ca8a04;
+}
+
+.text-secondary {
+  color: #98a2b2;
 }
 
 .text-info {
@@ -167,6 +176,7 @@ body {
   }
   .main-content {
     margin-left: 302px;
+    transition: margin-left 0.3s ease-in-out;
     height: 100vh;
     overflow-y: auto;
   }
@@ -189,6 +199,13 @@ body {
   }
   .header ul .nav-item {
     font-size: 14px;
+  }
+  .main-content .nav-list {
+    gap: 24px;
+  }
+  .main-content .nav-list .nav-item {
+    font-size: 12px;
+    list-style-type: none;
   }
 }
 

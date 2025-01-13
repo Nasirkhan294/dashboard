@@ -33,6 +33,11 @@ body {
   background-color: $primary-opacity;
 }
 
+.badge-secondary {
+  color: $secondary;
+  border: 1px solid $secondary;
+}
+
 .badge-warning {
   color: $warning;
   background-color: $warning-opacity;
@@ -60,6 +65,10 @@ body {
 
 .text-warning {
   color: $warning;
+}
+
+.text-secondary {
+  color: $secondary;
 }
 
 .text-info {
@@ -236,6 +245,16 @@ body {
     ul {
       .nav-item {
         font-size: 14px;
+      }
+    }
+  }
+
+  .main-content {
+    .nav-list {
+      gap: 24px;
+      .nav-item {
+        font-size: 12px;
+        list-style-type: none;
       }
     }
   }
