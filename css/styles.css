@@ -203,22 +203,26 @@ body {
 }
 
 @media (min-width: 1024px) {
+  .display-none {
+    display: none;
+  }
   .sidebar {
     transform: translateX(0);
     width: 250px;
   }
   .sidebar.shifted {
     transform: translateX(3%);
-    width: 100px;
+    width: 85px;
   }
   .main-content {
     margin-left: 250px;
     transition: margin-left 0.3s ease-in-out;
     height: 100vh;
     overflow-y: auto;
+    overflow-x: hidden;
   }
   .main-content.shifted {
-    margin-left: 100px;
+    margin-left: 85px;
   }
   .main-content .header {
     padding: 20px 36px;
@@ -242,7 +246,6 @@ body {
     width: 302px;
   }
   .sidebar.shifted {
-    transform: translateX(3%);
     width: 115px;
   }
   .sidebar .sidebar-nav .nav-link span {

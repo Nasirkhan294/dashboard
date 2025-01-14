@@ -235,12 +235,15 @@ body {
 }
 
 @media (min-width: 1024px) {
+  .display-none {
+    display: none;
+  }
   .sidebar {
     transform: translateX(0);
     width: 250px;
     &.shifted {
       transform: translateX(3%);
-      width: 100px;
+      width: 85px;
     }
   }
   .main-content {
@@ -248,8 +251,9 @@ body {
     transition: margin-left 0.3s ease-in-out;
     height: 100vh;
     overflow-y: auto;
+    overflow-x: hidden;
     &.shifted {
-      margin-left: 100px;
+      margin-left: 85px;
     }
     .header {
       padding: 20px 36px;
@@ -277,7 +281,6 @@ body {
     transform: translateX(0);
     width: 302px;
     &.shifted {
-      transform: translateX(3%);
       width: 115px;
     }
     .sidebar-nav {

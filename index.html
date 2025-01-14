@@ -63,7 +63,7 @@
               <span class="user-profession">Designer</span>
             </div>
           </div>
-          <div>
+          <div class="profile-icon">
             <img src="assets/Vector.png" alt="Vector" />
           </div>
         </div>
@@ -307,10 +307,10 @@
 
       <!-- Main content start -->
       <div class="container pt-3">
-        <div class="row" style="margin-top: 36px;">
+        <div class="row" style="margin-top: 36px">
           <div
             class="col-12 col-md-6 col-xl-3 d-flex align-items-center justify-content-start"
-            style="gap: 24px;"
+            style="gap: 24px"
           >
             <h1 class="fs-3">Task Boards</h1>
             <figure>
@@ -320,38 +320,22 @@
           <ul
             class="col-12 col-md-6 col-xl-6 d-flex justify-content-center align-items-center mb-0 nav-list"
           >
-            <li
-              class="nav-item"
-            >
-              <a
-                href="#"
-                class="nav-link active"
-                >Timeline</a
-              >
+            <li class="nav-item">
+              <a href="#" class="nav-link active">Timeline</a>
             </li>
-            <li
-              class="nav-item"
-            >
+            <li class="nav-item">
               <a href="#" class="nav-link pb-2">Calendar</a>
             </li>
-            <li
-              class="nav-item"
-            >
+            <li class="nav-item">
               <a href="#" class="nav-link pb-2">Dashboard</a>
             </li>
-            <li
-              class="nav-item"
-            >
+            <li class="nav-item">
               <a href="#" class="nav-link pb-2">Progress</a>
             </li>
-            <li
-              class="nav-item"
-            >
+            <li class="nav-item">
               <a href="#" class="nav-link pb-2">Forms</a>
             </li>
-            <li
-              class="nav-item"
-            >
+            <li class="nav-item">
               <a href="#" class="nav-link pb-2">More</a>
             </li>
           </ul>
@@ -380,20 +364,24 @@
               alt="profile"
               style="margin-left: -1rem"
             />
-            <img src="assets/Icon.png" alt="icon" style="margin-left: 8px;"/>
+            <img src="assets/Icon.png" alt="icon" style="margin-left: 8px" />
           </div>
         </div>
-        <div class="row" style="margin-top: 28px;">
+        <div class="row" style="margin-top: 28px">
           <div class="col-8 col-md-5 col-xl-2">
             <div class="d-flex border my-2 rounded-3">
               <div
-                class="d-flex align-items-center justify-content-start border-end p-2" style="width: 157px; gap: 8px"
+                class="d-flex align-items-center justify-content-start border-end p-2"
+                style="width: 157px; gap: 8px"
               >
                 <img src="assets/d-icon.png" alt="icon" />
-                <span class="text-gray" style="font-size: 11px">Board View</span>
+                <span class="text-gray" style="font-size: 11px"
+                  >Board View</span
+                >
               </div>
               <div
-                class="d-flex align-items-center justify-content-start bg-white rounded p-2" style="width: 155px; gap: 8px"
+                class="d-flex align-items-center justify-content-start bg-white rounded p-2"
+                style="width: 155px; gap: 8px"
               >
                 <img src="assets/barrs.png" alt="icon" />
                 <span class="text-gray" style="font-size: 11px">List View</span>
@@ -404,18 +392,20 @@
             class="col-12 col-md-7 col-xl-4 d-flex align-items-center justify-content-center rounded-3 my-3 my-md-0"
           >
             <span class="pe-3"><img src="assets/Line.png" alt="icon" /></span>
-            <div class="d-flex align-items-center justify-content-center p-2 gap-3">
-              <img src="assets/lock1.png" alt="icon"  />
+            <div
+              class="d-flex align-items-center justify-content-center p-2 gap-3"
+            >
+              <img src="assets/lock1.png" alt="icon" />
               <span style="font-size: 11px" class="text-secondary"
                 >Limited Access</span
               >
               <img src="assets/arrow.png" alt="icon" />
             </div>
-            <div class="d-flex align-items-center justify-content-center p-2 gap-3">
+            <div
+              class="d-flex align-items-center justify-content-center p-2 gap-3"
+            >
               <span class="px-2"><img src="assets/Line.png" alt="icon" /></span>
-              <span style="font-size: 11px" class="text-secondary"
-                >Owners</span
-              >
+              <span style="font-size: 11px" class="text-secondary">Owners</span>
               <img src="assets/twitter.png" alt="icon" />
               <span style="font-size: 11px" class="text-gray"
                 >Twitter Team</span
@@ -434,7 +424,7 @@
                 class="form-control border-0"
                 placeholder="Search Tasks"
                 aria-label="Search Tasks"
-                style="width: 176px; height: 40px;"
+                style="width: 176px; height: 40px"
               />
             </form>
           </div>
@@ -449,8 +439,7 @@
           </div>
         </div>
       </div>
-      <div class="container" style="margin-top: 44px;">
-        
+      <div class="container" style="margin-top: 44px">
         <div class="row px-1 gap-4">
           <div class="col">
             <div
@@ -1191,7 +1180,12 @@
       const mainContent = document.querySelector('.main-content');
       const sideContent = document.querySelector('.sidebar');
       const brandName = document.querySelector('.brand-name');
-      const navLink = document.querySelector('.sidebar-nav li a');
+      const spanElements = document.querySelectorAll('.nav-link  span');
+      const accordionBtn = document.querySelector('.accordion-button');
+      const userName = document.querySelector('.user-name');
+      const userProfession = document.querySelector('.user-profession');
+      const profileIcon = document.querySelector('.profile-icon');
+
 
       toggleSidebar.addEventListener('click', () => {
         sidebar.classList.toggle('open');
@@ -1204,8 +1198,14 @@
       collapseSideBar.addEventListener('click', () => {
         sideContent.classList.toggle('shifted');
         mainContent.classList.toggle('shifted');
-        brandName.classList.toggle('d-none');
-        navLink.classList.toggle('flex-column-reverse');
+        brandName.classList.toggle('display-none');
+        accordionBtn.classList.toggle('display-none');
+        userName.classList.toggle('display-none')
+        userProfession.classList.toggle('display-none')
+        profileIcon.classList.toggle('display-none')
+        spanElements.forEach((span) => {
+          span.classList.toggle('display-none');
+        });
       });
     </script>
 
