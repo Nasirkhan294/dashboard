@@ -37,9 +37,21 @@ body {
 .fs-6 {
   font-size: 14px !important;
 }
+
+.input-group {
+  width: 264px !important;
+  color: $secondary !important;
+  > .form-control:focus {
+    outline-width: 0 !important;
+    box-shadow: none;
+    font-size: 12px;
+  }
+}
+
 .accordion-button:not(.collapsed) {
   box-shadow: none !important;
 }
+
 .badge-primary {
   color: $primary;
   background-color: $primary-opacity;
@@ -185,15 +197,6 @@ body {
   padding: 20px;
   .form-holder {
     gap: 32px;
-    .input-group {
-      width: 264px !important;
-      color: $secondary !important;
-      > .form-control:focus {
-        outline-width: 0 !important;
-        box-shadow: none;
-        font-size: 12px;
-      }
-    }
   }
   ul {
     gap: 32px;

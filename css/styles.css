@@ -14,6 +14,16 @@ body {
   font-size: 14px !important;
 }
 
+.input-group {
+  width: 264px !important;
+  color: #98a2b2 !important;
+}
+.input-group > .form-control:focus {
+  outline-width: 0 !important;
+  box-shadow: none;
+  font-size: 12px;
+}
+
 .accordion-button:not(.collapsed) {
   box-shadow: none !important;
 }
@@ -157,15 +167,6 @@ body {
 }
 .header .form-holder {
   gap: 32px;
-}
-.header .form-holder .input-group {
-  width: 264px !important;
-  color: #98a2b2 !important;
-}
-.header .form-holder .input-group > .form-control:focus {
-  outline-width: 0 !important;
-  box-shadow: none;
-  font-size: 12px;
 }
 .header ul {
   gap: 32px;
