@@ -10,6 +10,14 @@ body {
   font-weight: 800;
 }
 
+.fs-6 {
+  font-size: 14px !important;
+}
+
+.accordion-button:not(.collapsed) {
+  box-shadow: none !important;
+}
+
 .badge-primary {
   color: #3b82f6;
   background-color: #e5ecf8;
@@ -135,7 +143,6 @@ body {
 }
 .sidebar .accordion .accordion-button:focus {
   outline-width: 0 !important;
-  box-shadow: none;
 }
 .sidebar .accordion .accordion-item {
   border: none !important;
@@ -198,11 +205,45 @@ body {
 @media (min-width: 1024px) {
   .sidebar {
     transform: translateX(0);
+    width: 250px;
+  }
+  .sidebar.shifted {
+    transform: translateX(3%);
+    width: 100px;
+  }
+  .main-content {
+    margin-left: 250px;
+    transition: margin-left 0.3s ease-in-out;
+    height: 100vh;
+    overflow-y: auto;
+  }
+  .main-content.shifted {
+    margin-left: 100px;
+  }
+  .main-content .header {
+    padding: 20px 36px;
+  }
+  .main-content .header .form-holder .input-group {
+    height: 48px;
+  }
+  .main-content .container {
+    padding: 0 36px !important;
+  }
+}
+@media (min-width: 1600px) {
+  .brand-name {
+    font-size: 1.5rem;
+  }
+  .sidebar {
+    transform: translateX(0);
     width: 302px;
   }
   .sidebar.shifted {
     transform: translateX(3%);
     width: 115px;
+  }
+  .sidebar .sidebar-nav .nav-link span {
+    font-size: 14px;
   }
   .main-content {
     margin-left: 302px;
@@ -213,27 +254,19 @@ body {
   .main-content.shifted {
     margin-left: 115px;
   }
+  .main-content .container {
+    max-width: 1528px;
+  }
+  .main-content .nav-list .nav-item {
+    font-size: 14px;
+  }
   .main-content .header {
     padding: 20px 36px;
   }
   .main-content .header .form-holder .input-group {
     height: 48px;
   }
-}
-@media (min-width: 1600px) {
-  .brand-name {
-    font-size: 1.5rem;
-  }
-  .sidebar .sidebar-nav .nav-link span {
-    font-size: 14px;
-  }
-  .header ul .nav-item {
-    font-size: 14px;
-  }
-  .main-content .container {
-    max-width: 1528px;
-  }
-  .main-content .nav-list .nav-item {
+  .main-content .header ul .nav-item {
     font-size: 14px;
   }
 }
