@@ -102,7 +102,7 @@ body {
   transition: transform 0.3s ease-in-out;
   z-index: 1040;
   overflow-y: auto;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 .sidebar.open {
   transform: translateX(0);
