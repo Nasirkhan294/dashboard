@@ -208,6 +208,28 @@ body {
   border-bottom: 1px solid #3b82f6;
 }
 
+#mobileSearchBtn {
+  transform: translateX(175%);
+}
+
+.modal-dialog {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-content {
+  flex-direction: row-reverse !important;
+  justify-content: space-between;
+  width: 75%;
+  margin-top: 2rem;
+}
+
+/* Hide the modal trigger button on larger screens */
+@media (min-width: 768px) {
+  #mobileSearchBtn {
+    display: none;
+  }
+}
 @media (min-width: 1024px) {
   .display-none {
     display: none;

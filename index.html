@@ -50,14 +50,9 @@
             <span class="fas fa-times"></span>
           </button>
         </div>
-        <div
-          class="d-flex align-items-center border-bottom profile-holder"
-        >
+        <div class="d-flex align-items-center border-bottom profile-holder">
           <div class="d-flex align-items-center gap-4">
-            <img
-              src="assets/Avatar.png"
-              alt="Avatar"
-            />
+            <img src="assets/Avatar.png" alt="Avatar" />
 
             <div>
               <p class="user-name">Nancy Martino</p>
@@ -254,26 +249,35 @@
         </button>
 
         <div
-          class="col-12 col-md-6 col-xl-4 d-flex align-items-center form-holder order-2 order-md-1 mt-2 mt-md-0"
+          class="col-2 col-md-6 col-xl-4 d-flex align-items-center form-holder "
         >
-          <form class="input-group border rounded-3">
-            <span class="input-group-text bg-white border-0"
-              ><img src="assets/search.png" alt="icon"
-            /></span>
+          <button
+            id="mobileSearchBtn"
+            class="d-lg-none btn rounded-3"
+            data-bs-toggle="modal"
+            data-bs-target="#searchModal"
+          >
+            <img src="assets/search.png" alt="search icon" />
+          </button>
+          <form class="input-group border rounded-3 d-none d-md-flex">
+            <span class="input-group-text bg-white border-0">
+              <img src="assets/search.png" alt="icon" />
+            </span>
             <input
               type="text"
               class="form-control border-0"
               placeholder="Search Tasks"
               aria-label="Search Tasks"
             />
-            <span class="input-group-text bg-white border-0"
-              ><img src="assets/forward.png" alt="icon"
-            /></span>
+            <span class="input-group-text bg-white border-0">
+              <img src="assets/forward.png" alt="icon" />
+            </span>
           </form>
-          <figure class="mb-0">
+          <figure class="mb-0 d-none d-lg-block">
             <img src="assets/mic.png" alt="mic" />
           </figure>
         </div>
+
         <ul
           class="col d-none d-md-flex align-items-center justify-content-center mb-0 mt-md-4 mt-lg-0 order-md-5 order-lg-2"
         >
@@ -298,11 +302,46 @@
         </ul>
 
         <div
-          class="col-8 col-md-3 col-xl-2 d-flex align-items-center justify-content-end header-profile-holder order-1 order-lg-3"
+          class="col-3 col-md-3 col-xl-2 d-flex align-items-center justify-content-end header-profile-holder order-lg-3"
         >
           <img src="assets/bell.png" alt="icon" />
           <img src="assets/message.png" alt="icon" />
           <img src="assets/profile.png" alt="profile" />
+        </div>
+      </div>
+
+      <!-- Modal for Search -->
+      <div
+        class="modal fade"
+        id="searchModal"
+        tabindex="-1"
+        aria-labelledby="searchModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+
+            <form class="input-group border rounded-3">
+              <span class="input-group-text bg-white border-0">
+                <img src="assets/search.png" alt="icon" />
+              </span>
+              <input
+                type="text"
+                class="form-control border-0"
+                placeholder="Search Tasks"
+                aria-label="Search Tasks"
+              />
+              <span class="input-group-text bg-white border-0">
+                <img src="assets/forward.png" alt="icon" />
+              </span>
+            </form>
+          </div>
         </div>
       </div>
 
@@ -1190,7 +1229,7 @@
 
       toggleSidebar.addEventListener('click', () => {
         sidebar.classList.toggle('open');
-        mainContent.classList.add('d-none')
+        mainContent.classList.add('d-none');
       });
 
       closeSidebar.addEventListener('click', () => {
@@ -1210,6 +1249,15 @@
         profileHolder.classList.toggle('justify-content-center');
         spanElements.forEach((span) => {
           span.classList.toggle('display-none');
+        });
+      });
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const mobileSearchBtn = document.getElementById('mobileSearchBtn');
+        const searchForm = document.getElementById('searchForm');
+
+        mobileSearchBtn.addEventListener('click', () => {
+          searchForm.classList.toggle('d-none');
         });
       });
     </script>
