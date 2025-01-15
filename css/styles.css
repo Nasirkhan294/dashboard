@@ -24,6 +24,10 @@ body {
   font-size: 12px;
 }
 
+.accordion {
+  --bs-accordion-btn-focus-box-shadow: none !important;
+}
+
 .accordion-button:not(.collapsed) {
   box-shadow: none !important;
 }
