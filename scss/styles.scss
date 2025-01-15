@@ -127,9 +127,10 @@ body {
   transform: translateX(-100%);
   transition: transform 0.3s ease-in-out;
   z-index: 1040;
+  overflow-y: auto;
+  overflow-x: hidden;
   &.open {
     transform: translateX(0);
-    overflow-y: auto;
   }
   .logo-holder {
     padding: 30px 32px;
