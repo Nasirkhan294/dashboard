@@ -50,12 +50,13 @@
             <span class="fas fa-times"></span>
           </button>
         </div>
-        <div class="d-flex align-items-center justify-content-center border-bottom profile-holder">
-          <div class="d-flex align-items-center">
+        <div
+          class="d-flex align-items-center border-bottom profile-holder"
+        >
+          <div class="d-flex align-items-center gap-4">
             <img
               src="assets/Avatar.png"
               alt="Avatar"
-              style="margin-right: 24px"
             />
 
             <div>
@@ -1182,17 +1183,19 @@
       const brandName = document.querySelector('.brand-name');
       const spanElements = document.querySelectorAll('.nav-link  span');
       const accordionBtn = document.querySelector('.accordion-button');
+      const profileHolder = document.querySelector('.profile-holder');
       const userName = document.querySelector('.user-name');
       const userProfession = document.querySelector('.user-profession');
       const profileIcon = document.querySelector('.profile-icon');
 
-
       toggleSidebar.addEventListener('click', () => {
         sidebar.classList.toggle('open');
+        mainContent.classList.add('d-none')
       });
 
       closeSidebar.addEventListener('click', () => {
         sidebar.classList.remove('open');
+        mainContent.classList.remove('d-none');
       });
 
       collapseSideBar.addEventListener('click', () => {
@@ -1200,9 +1203,11 @@
         mainContent.classList.toggle('shifted');
         brandName.classList.toggle('display-none');
         accordionBtn.classList.toggle('display-none');
-        userName.classList.toggle('display-none')
-        userProfession.classList.toggle('display-none')
-        profileIcon.classList.toggle('display-none')
+        userName.classList.toggle('display-none');
+        userProfession.classList.toggle('display-none');
+        profileIcon.classList.toggle('display-none');
+        profileHolder.classList.toggle('border-bottom');
+        profileHolder.classList.toggle('justify-content-center');
         spanElements.forEach((span) => {
           span.classList.toggle('display-none');
         });
