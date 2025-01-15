@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <h1>🚀 Dashboard</h>
+  <h1>🚀 Responsive Dashboard</h>
 </div>
 
 A modern, responsive dashboard built with Bootstrap 5, featuring a collapsible sidebar, sticky header, and intuitive navigation. Optimized for all devices, it delivers a clean, user-friendly layout perfect for task boards, analytics, and more. 🚀
