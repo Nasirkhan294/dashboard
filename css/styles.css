@@ -209,7 +209,8 @@ body {
 }
 
 #mobileSearchBtn {
-  transform: translateX(175%);
+  transform: translateX(170%);
+  --bs-btn-border-color: none !important;
 }
 
 .modal-dialog {
@@ -220,7 +221,7 @@ body {
 .modal-content {
   flex-direction: row-reverse !important;
   justify-content: space-between;
-  width: 75%;
+  width: 65%;
   margin-top: 2rem;
 }
 
