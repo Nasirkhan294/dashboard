@@ -216,6 +216,7 @@ body {
 }
 
 .userBtn {
+  --bs-btn-border-width: none !important;
   --bs-btn-padding-x: none !important;
 }
 
