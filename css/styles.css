@@ -208,29 +208,19 @@ body {
   border-bottom: 1px solid #3b82f6;
 }
 
-#mobileSearchBtn {
-  transform: translateX(165%);
-  --bs-btn-border-color: none !important;
+.userBtn {
+  --bs-btn-border-width: none !important;
+  --bs-btn-padding-x: none !important;
 }
 
-.modal-dialog {
-  display: flex;
-  justify-content: center;
+.mobileSearchBtn {
+  transform: translateX(365%);
 }
 
-.modal-content {
-  flex-direction: row-reverse !important;
-  justify-content: space-between;
-  width: 65%;
-  margin-top: 2rem;
+.dropdown-menu.show {
+  margin-top: 1.6rem !important;
 }
 
-/* Hide the modal trigger button on larger screens */
-@media (min-width: 768px) {
-  #mobileSearchBtn {
-    display: none;
-  }
-}
 @media (min-width: 1024px) {
   .display-none {
     display: none;

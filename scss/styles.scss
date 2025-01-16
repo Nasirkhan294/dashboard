@@ -242,28 +242,21 @@ body {
   }
 }
 
-#mobileSearchBtn {
-  transform: translateX(165%);
-  --bs-btn-border-color: none !important;
+.userBtn {
+  --bs-btn-border-width: none !important;
+  --bs-btn-padding-x: none !important;
 }
 
-.modal-dialog {
-  display:flex;
-  justify-content: center;
+.mobileSearchBtn {
+  transform: translateX(365%);
 }
 
-.modal-content {
-  flex-direction: row-reverse !important;
-  justify-content: space-between;
-  width: 65%;
-  margin-top: 2rem;
+.form-dropdown {
+  margin-left: 3rem !important;
 }
 
-/* Hide the modal trigger button on larger screens */
-@media (min-width: 768px) {
-  #mobileSearchBtn {
-    display: none;
-  }
+.dropdown-menu.show {
+  margin-top: 1.6rem !important;
 }
 
 
