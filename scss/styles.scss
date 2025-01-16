@@ -224,6 +224,7 @@ body {
 
 // Main content Styles
 .main-content {
+  overflow-x: hidden;
   .nav-list {
     gap: 24px;
     .nav-item {
@@ -242,8 +243,11 @@ body {
   }
 }
 
-.userBtn {
+.searchBtn {
   --bs-btn-border-width: none !important;
+}
+
+.userBtn {
   --bs-btn-padding-x: none !important;
 }
 
@@ -252,14 +256,13 @@ body {
 }
 
 .form-dropdown {
-  inset: unset !important; 
-  transform: translateX(-36%) !important; 
+  inset: unset !important;
+  transform: translateX(-36%) !important;
 }
 
 .dropdown-menu.show {
   margin-top: 1.6rem !important;
 }
-
 
 @media (min-width: 1024px) {
   .display-none {

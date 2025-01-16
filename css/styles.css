@@ -191,6 +191,9 @@ body {
   gap: 16px;
 }
 
+.main-content {
+  overflow-x: hidden;
+}
 .main-content .nav-list {
   gap: 24px;
 }
@@ -208,8 +211,11 @@ body {
   border-bottom: 1px solid #3b82f6;
 }
 
-.userBtn {
+.searchBtn {
   --bs-btn-border-width: none !important;
+}
+
+.userBtn {
   --bs-btn-padding-x: none !important;
 }
 

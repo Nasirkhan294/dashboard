@@ -338,7 +338,11 @@
             >
               <img src="assets/bell.png" alt="icon" />
             </button>
-            <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="messagesDropdown" style="max-width: 300px;">
+            <ul
+              class="dropdown-menu dropdown-menu-end shadow"
+              aria-labelledby="messagesDropdown"
+              style="max-width: 300px"
+            >
               <li class="p-3 border-bottom text-center">
                 <h6 class="mb-0 text-secondary" style="font-size: 14px">
                   ALERT CENTER
@@ -346,28 +350,49 @@
               </li>
               <li class="pt-3">
                 <a href="#" class="dropdown-item d-flex align-item-start gap-3">
-                  <i class="fas fa-clipboard-list align-self-center bg-primary text-white border p-2 rounded-4" style="font-size: 20px;"></i>
+                  <i
+                    class="fas fa-clipboard-list align-self-center bg-primary text-white border p-2 rounded-4"
+                    style="font-size: 20px"
+                  ></i>
                   <div>
-                    <small class="text-muted" style="font-size: 10px;">December 12, 2019</small>
-                    <p class="text-dark" style="font-size: 14px;">A new monthly report is ready...</p>
+                    <small class="text-muted" style="font-size: 10px"
+                      >December 12, 2019</small
+                    >
+                    <p class="text-dark" style="font-size: 14px">
+                      A new monthly report is ready...
+                    </p>
                   </div>
                 </a>
               </li>
               <li>
                 <a href="#" class="dropdown-item d-flex align-item-start gap-3">
-                  <i class="fas fa-donate align-self-center bg-danger text-white border p-2 rounded-4" style="font-size: 20px;"></i>
+                  <i
+                    class="fas fa-donate align-self-center bg-danger text-white border p-2 rounded-4"
+                    style="font-size: 20px"
+                  ></i>
                   <div>
-                    <small class="text-muted" style="font-size: 10px;">December 7, 2019</small>
-                    <p class="text-dark" style="font-size: 14px;">$290.29 has been deposited...</p>
+                    <small class="text-muted" style="font-size: 10px"
+                      >December 7, 2019</small
+                    >
+                    <p class="text-dark" style="font-size: 14px">
+                      $290.29 has been deposited...
+                    </p>
                   </div>
                 </a>
               </li>
               <li class="border-bottom pb-3">
                 <a href="#" class="dropdown-item d-flex align-item-start gap-3">
-                  <i class="fas fa-exclamation-triangle align-self-center bg-warning text-white border p-2 rounded-4" style="font-size: 20px;"></i>
+                  <i
+                    class="fas fa-exclamation-triangle align-self-center bg-warning text-white border p-2 rounded-4"
+                    style="font-size: 20px"
+                  ></i>
                   <div>
-                    <small class="text-muted" style="font-size: 10px;">December 2, 2019</small>
-                    <p class="text-dark" style="font-size: 14px;">Spending Alert: We've noticed...</p>
+                    <small class="text-muted" style="font-size: 10px"
+                      >December 2, 2019</small
+                    >
+                    <p class="text-dark" style="font-size: 14px">
+                      Spending Alert: We've noticed...
+                    </p>
                   </div>
                 </a>
               </li>
@@ -520,24 +545,38 @@
                   style="width: 50px; height: 50px"
                 />
                 <div>
-                  <h6 class="mt-2 mb-0" style="font-size: 14px;">Nancy Martino</h6>
-                  <small class="text-secondary" style="font-size: 12px;">Designer</small>
+                  <h6 class="mt-2 mb-0" style="font-size: 14px">
+                    Nancy Martino
+                  </h6>
+                  <small class="text-secondary" style="font-size: 12px"
+                    >Designer</small
+                  >
                 </div>
               </li>
               <li class="pt-3">
-                <a class="dropdown-item d-flex align-items-center gap-3 text-secondary" href="#">
+                <a
+                  class="dropdown-item d-flex align-items-center gap-3 text-secondary"
+                  href="#"
+                >
                   <i class="fas fa-user"></i> <small>Profile</small>
                 </a>
               </li>
               <li>
-                <a class="dropdown-item d-flex align-items-center gap-3 text-secondary" href="#">
+                <a
+                  class="dropdown-item d-flex align-items-center gap-3 text-secondary"
+                  href="#"
+                >
                   <i class="fas fa-gear"></i> <small>Account Settings</small>
                 </a>
               </li>
-             
+
               <li class="border-bottom pb-3">
-                <a class="dropdown-item d-flex align-items-center gap-3 text-secondary" href="#">
-                  <i class="fas fa-question-circle"></i> <small>Help Center</small>
+                <a
+                  class="dropdown-item d-flex align-items-center gap-3 text-secondary"
+                  href="#"
+                >
+                  <i class="fas fa-question-circle"></i>
+                  <small>Help Center</small>
                 </a>
               </li>
               <li>
@@ -567,24 +606,86 @@
           </div>
           <ul
             class="col-12 col-xl-6 d-flex justify-content-center align-items-center mb-0 nav-list order-3 order-lg-2 mt-4 mt-lg-0"
+            id="myTab"
+            role="tablist"
           >
-            <li class="nav-item">
-              <a href="#" class="nav-link active">Timeline</a>
+            <li class="nav-item" role="presentation">
+              <a
+                href="#timeline"
+                class="nav-link active pb-2"
+                id="timeline-tab"
+                data-bs-toggle="tab"
+                role="tab"
+                aria-controls="timeline"
+                aria-selected="true"
+              >
+                Timeline
+              </a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link pb-2">Calendar</a>
+            <li class="nav-item" role="presentation">
+              <a
+                href="#calendar"
+                class="nav-link pb-2"
+                id="calendar-tab"
+                data-bs-toggle="tab"
+                role="tab"
+                aria-controls="calendar"
+                aria-selected="false"
+              >
+                Calendar
+              </a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link pb-2">Dashboard</a>
+            <li class="nav-item" role="presentation">
+              <a
+                href="#dashboard"
+                class="nav-link pb-2"
+                id="dashboard-tab"
+                data-bs-toggle="tab"
+                role="tab"
+                aria-controls="dashboard"
+                aria-selected="false"
+              >
+                Dashboard
+              </a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link pb-2">Progress</a>
+            <li class="nav-item" role="presentation">
+              <a
+                href="#progress"
+                class="nav-link pb-2"
+                id="progress-tab"
+                data-bs-toggle="tab"
+                role="tab"
+                aria-controls="progress"
+                aria-selected="false"
+              >
+                Progress
+              </a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link pb-2">Forms</a>
+            <li class="nav-item" role="presentation">
+              <a
+                href="#forms"
+                class="nav-link pb-2"
+                id="forms-tab"
+                data-bs-toggle="tab"
+                role="tab"
+                aria-controls="forms"
+                aria-selected="false"
+              >
+                Forms
+              </a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link pb-2">More</a>
+            <li class="nav-item" role="presentation">
+              <a
+                href="#more"
+                class="nav-link pb-2"
+                id="more-tab"
+                data-bs-toggle="tab"
+                role="tab"
+                aria-controls="more"
+                aria-selected="false"
+              >
+                More
+              </a>
             </li>
           </ul>
 
@@ -615,7 +716,10 @@
             <img src="assets/Icon.png" alt="icon" style="margin-left: 8px" />
           </div>
         </div>
-        <div class="row text-center text-md-start align-items-center" style="margin-top: 28px">
+        <div
+          class="row text-center text-md-start align-items-center"
+          style="margin-top: 28px"
+        >
           <div class="col-8 col-md-5 col-xl-2 mx-auto">
             <div class="d-flex border my-2 rounded-3 justify-content-center">
               <div
@@ -639,7 +743,9 @@
           <div
             class="col-12 col-md-7 col-xl-4 d-flex align-items-center justify-content-center rounded-3 my-3 my-md-0"
           >
-            <span class="pe-3 d-none d-md-block"><img src="assets/Line.png" alt="icon" /></span>
+            <span class="pe-3 d-none d-md-block"
+              ><img src="assets/Line.png" alt="icon"
+            /></span>
             <div
               class="d-flex align-items-center justify-content-center p-2 gap-3"
             >
@@ -647,8 +753,38 @@
               <span style="font-size: 11px" class="text-secondary"
                 >Limited Access</span
               >
-              <img src="assets/arrow.png" alt="icon" />
+              <button
+                class="btn p-0 bg-transparent border-0"
+                type="button"
+                id="dropdownMenuButton"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="assets/arrow.png" alt="icon" />
+              </button>
+              <ul
+                class="dropdown-menu dropdown-menu-end shadow"
+                aria-labelledby="dropdownMenuButton"
+                style="min-width: 150px; font-size: 11px"
+              >
+                <li>
+                  <a class="dropdown-item text-secondary" href="#"
+                    >View Details</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-secondary" href="#"
+                    >Edit Permissions</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item text-secondary" href="#"
+                    >Manage Access</a
+                  >
+                </li>
+              </ul>
             </div>
+
             <div
               class="d-flex align-items-center justify-content-center p-2 gap-3"
             >
@@ -663,37 +799,34 @@
           <div
             class="col-3 col-md-5 col-xl-3 d-flex align-items-center justify-content-center"
           >
-          <div class="dropdown">
-            <button
-              class="d-md-none btn bg-white"
-              id="userDropdown"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-              type="button"
-            >
-              <img src="assets/search.png" alt="search icon" />
-            </button>
-            <div
-              class="dropdown-menu form-dropdown dropdown-menu-right shadow p-2 bg-light"
-              aria-labelledby="userDropdown"
-              data-bs-display="static"
-            >
-              <form class="input-group border rounded-3 w-100">
-                <span class="input-group-text bg-white border-0">
-                  <img src="assets/search.png" alt="icon" />
-                </span>
-                <input
-                  type="text"
-                  class="form-control border-0"
-                  placeholder="Search Tasks"
-                  aria-label="Search Tasks"
-                />
-                <span class="input-group-text bg-white border-0">
-                  <img src="assets/forward.png" alt="icon" />
-                </span>
-              </form>
+            <div class="dropdown">
+              <button
+                class="d-md-none btn bg-white searchBtn"
+                id="userDropdown"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                type="button"
+              >
+                <img src="assets/search.png" alt="search icon" />
+              </button>
+              <div
+                class="dropdown-menu dropdown-menu-end shadow p-2 bg-light"
+                aria-labelledby="userDropdown"
+                data-bs-display="static"
+              >
+                <form class="input-group border rounded-3 w-100">
+                  <span class="input-group-text bg-white border-0">
+                    <img src="assets/search.png" alt="icon" />
+                  </span>
+                  <input
+                    type="text"
+                    class="form-control border-0"
+                    placeholder="Search Tasks"
+                    aria-label="Search Tasks"
+                  />
+                </form>
+              </div>
             </div>
-          </div>
             <form class="input-group border rounded-3 d-none d-md-flex">
               <span class="input-group-text bg-white border-0"
                 ><img src="assets/search.png" alt="icon"
