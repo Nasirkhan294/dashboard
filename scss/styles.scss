@@ -48,6 +48,10 @@ body {
   }
 }
 
+button:focus {
+  --bs-btn-border-width: none !important;
+}
+
 .accordion {
   --bs-accordion-btn-focus-box-shadow: none !important;
 }

@@ -24,6 +24,10 @@ body {
   font-size: 12px;
 }
 
+button:focus {
+  --bs-btn-border-width: none !important;
+}
+
 .accordion {
   --bs-accordion-btn-focus-box-shadow: none !important;
 }
