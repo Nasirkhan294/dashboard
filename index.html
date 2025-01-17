@@ -50,7 +50,9 @@
             <span class="fas fa-times"></span>
           </button>
         </div>
-        <div class="d-flex align-items-center justify-content-between border-bottom profile-holder">
+        <div
+          class="d-flex align-items-center justify-content-between border-bottom profile-holder"
+        >
           <div class="d-flex align-items-center user-name-img">
             <img src="assets/Avatar.png" alt="Avatar" />
 
@@ -60,7 +62,47 @@
             </div>
           </div>
           <div class="profile-icon">
-            <img src="assets/Vector.png" alt="Vector" />
+            <div class="dropdown">
+              <button
+                class="btn userBtn"
+                type="button"
+                id="userDropdown"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="assets/Vector.png" alt="Vector" />
+              </button>
+              <ul
+                class="dropdown-menu dropdown-menu-end shadow"
+                aria-labelledby="userDropdown"
+                style="min-width: 230px"
+              >
+                <li class="pt-3">
+                  <a
+                    class="dropdown-item d-flex align-items-center gap-3 text-secondary"
+                    href="#"
+                  >
+                    <i class="fas fa-user"></i> <small>Profile</small>
+                  </a>
+                </li>
+                <li class="border-bottom pb-3">
+                  <a
+                    class="dropdown-item d-flex align-items-center gap-3 text-secondary"
+                    href="#"
+                  >
+                    <i class="fas fa-gear"></i> <small>Account Settings</small>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item d-flex align-items-center py-2 text-secondary gap-3"
+                    href="#"
+                  >
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="accordion" id="sidebarAccordion">
@@ -855,7 +897,7 @@
             </div>
           </div>
           <div
-            class="col-3 col-md-4 col-xl-3 d-flex align-items-center justify-content-center pe-4 pe-md-2"
+            class="col-3 col-md-4 col-xl-3 d-flex align-items-center justify-content-center pe-4 pe-md-"
           >
             <div class="dropdown">
               <button
