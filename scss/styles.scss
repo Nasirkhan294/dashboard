@@ -143,7 +143,7 @@ body {
   .profile-holder {
     margin: 32px 32px 36px;
     padding-bottom: 32px;
-    gap: 53px;
+    gap: 174px;
     .user-name {
       font-size: 14px;
       color: $dark;
@@ -265,9 +265,27 @@ body {
   margin-top: 1.6rem !important;
 }
 
+.user-name-img {
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .profile-holder {
+    gap: 515px !important;
+  }
+}
+
 @media (min-width: 1024px) {
   .display-none {
     display: none;
+  }
+
+  .user-name-img {
+    gap: 8px !important;
+  }
+
+  .profile-holder {
+    gap: 16px !important;
   }
   .sidebar {
     transform: translateX(0);
@@ -290,7 +308,7 @@ body {
       padding: 20px 36px;
       .form-holder {
         .input-group {
-          height: 48px;
+          height: 42px;
         }
       }
     }
@@ -302,6 +320,13 @@ body {
 }
 
 @media (min-width: 1600px) {
+  .profile-holder {
+    gap: 53px !important;
+  }
+
+  .user-name-img {
+    gap: 16px !important;
+  }
   .fs-6 {
     font-size: 16px !important;
   }
