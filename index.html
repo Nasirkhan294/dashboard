@@ -304,24 +304,80 @@
 
         <ul
           class="col d-none d-md-flex align-items-center justify-content-center mb-0 mt-md-4 mt-xl-0 order-md-5 order-xl-2"
+          id="myTab"
+          role="tablist"
         >
-          <li class="nav-item">
-            <a href="#" class="nav-link active">Dashboard</a>
+          <li class="nav-item" role="presentation">
+            <a
+              href="#dashboard"
+              class="nav-link active"
+              id="dashboard-tab"
+              data-bs-toggle="tab"
+              role="tab"
+              aria-controls="dashboard"
+              aria-selected="true"
+              >Dashboard</a
+            >
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">My Tasks</a>
+          <li class="nav-item" role="presentation">
+            <a
+              href="#myTasks"
+              class="nav-link"
+              id="myTasks-tab"
+              data-bs-toggle="tab"
+              role="tab"
+              aria-controls="myTasks"
+              aria-selected="false"
+              >My Tasks</a
+            >
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">My Tasks</a>
+          <li class="nav-item" role="presentation">
+            <a
+              href="#tasks"
+              class="nav-link"
+              id="tasks-tab"
+              data-bs-toggle="tab"
+              role="tab"
+              aria-controls="tasks"
+              aria-selected="false"
+              >Tasks</a
+            >
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Reporting</a>
+          <li class="nav-item" role="presentation">
+            <a
+              href="#reporting"
+              class="nav-link"
+              id="reporting-tab"
+              data-bs-toggle="tab"
+              role="tab"
+              aria-controls="reporting"
+              aria-selected="false"
+              >Reporting</a
+            >
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Portfolio</a>
+          <li class="nav-item" role="presentation">
+            <a
+              href="#portfolio"
+              class="nav-link"
+              id="portfolio-tab"
+              data-bs-toggle="tab"
+              role="tab"
+              aria-controls="portfolio"
+              aria-selected="false"
+              >Portfolio</a
+            >
           </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Goals</a>
+          <li class="nav-item" role="presentation">
+            <a
+              href="#goal"
+              class="nav-link"
+              id="goal-tab"
+              data-bs-toggle="tab"
+              role="tab"
+              aria-controls="goal"
+              aria-selected="false"
+              >Goal</a
+            >
           </li>
         </ul>
 
@@ -741,7 +797,7 @@
             </div>
           </div>
           <div
-            class="col-12 col-md-8 col-xl-4 d-flex align-items-center justify-content-center justify-content-md-end  rounded-3 my-3 my-md-0"
+            class="col-12 col-md-8 col-xl-4 d-flex align-items-center justify-content-center justify-content-md-end rounded-3 my-3 my-md-0"
           >
             <span class="pe-3 d-none d-md-block"
               ><img src="assets/Line.png" alt="icon"
@@ -790,7 +846,7 @@
             >
               <span class="px-2"><img src="assets/Line.png" alt="icon" /></span>
               <span style="font-size: 11px" class="text-secondary">Owners</span>
-             <a href="#"> <img src="assets/twitter.png" alt="icon" /></a>
+              <a href="#"> <img src="assets/twitter.png" alt="icon" /></a>
               <span style="font-size: 11px" class="text-gray"
                 >Twitter Team</span
               >
