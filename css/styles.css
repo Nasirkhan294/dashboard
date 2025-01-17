@@ -122,7 +122,6 @@ button:focus {
 .sidebar .profile-holder {
   margin: 32px 32px 36px;
   padding-bottom: 32px;
-  gap: 174px;
 }
 .sidebar .profile-holder .user-name {
   font-size: 14px;
@@ -241,11 +240,6 @@ button:focus {
   gap: 16px;
 }
 
-@media (min-width: 768px) {
-  .profile-holder {
-    gap: 515px !important;
-  }
-}
 @media (min-width: 1024px) {
   .display-none {
     display: none;
@@ -285,9 +279,6 @@ button:focus {
   }
 }
 @media (min-width: 1600px) {
-  .profile-holder {
-    gap: 53px !important;
-  }
   .user-name-img {
     gap: 16px !important;
   }
