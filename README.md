@@ -11,7 +11,7 @@ A modern, responsive dashboard built with Bootstrap 5, featuring a collapsible s
   <ul>
     <li>HTML5</li>
     <li>CSS3</li>
-    <li>Bootstrap</li>
+    <li>Bootstrap 5</li>
     <li>JavaScript</li>
   </ul>
 
